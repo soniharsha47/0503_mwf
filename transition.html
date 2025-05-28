@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover | Transition</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: plum;
+            transition-duration: 5s;
+            transition-delay: 2s;
+        }
+
+        .box:hover{
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+        }   
+        .subbox{
+            background-color: gray;
+            visibility: hidden;
+            position: absolute;
+        }
+        .box1:hover .subbox{
+            visibility: visible;
+            /* position: static; */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">hover me </div>
+
+    <div class="box1">
+        hover me
+        <div class="subbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eaque nam dolores, consequuntur iusto veniam voluptatum optio eveniet qui impedit amet rem provident totam sapiente mollitia eius debitis aliquam cum iure repellendus maiores asperiores praesentium? Quidem vel rem rerum eum amet cumque quae? Laborum esse, a distinctio voluptatum tempore repudiandae iste debitis minus ducimus. Numquam reiciendis deleniti facilis aliquam nisi doloremque consectetur voluptatem earum illum officia, quos vel expedita aspernatur voluptas repudiandae labore necessitatibus quas voluptatibus culpa maiores similique! Sunt suscipit voluptatibus voluptatem obcaecati quia cupiditate mollitia, unde nulla sequi provident nostrum quibusdam repellendus ad doloribus veniam animi sed laboriosam commodi quasi sit assumenda necessitatibus ipsum architecto officiis! Excepturi ducimus ad corrupti rem, officiis veniam. Ab numquam perspiciatis error ullam aliquam minima dolorum, nam non? Quos id laboriosam labore in tenetur harum consectetur autem saepe! Dolorem recusandae tenetur doloribus quia a cumque dolore accusamus unde nisi, in, dolor sapiente incidunt eligendi amet necessitatibus architecto. Explicabo ipsa alias ratione dolore quod, odit exercitationem dolorum ipsam culpa repellendus, ut repudiandae aut. Distinctio sequi asperiores pariatur possimus est ad saepe qui tenetur repudiandae iure consectetur reprehenderit doloremque ipsa expedita dolorum, fugit cupiditate dignissimos quos ab minima earum illum accusantium molestiae animi. Tempore, nisi!</div>
+    </div>
+    
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia eveniet labore dolores dolore? Placeat distinctio nisi alias nesciunt ipsa dignissimos quos quae aliquid! Ratione, rerum? Sit tempora ipsum optio assumenda sapiente, accusantium ab repellat? Adipisci iusto corporis praesentium eos voluptatibus? Porro nulla molestias hic minima recusandae facilis mollitia cum ex adipisci, omnis tempore laboriosam velit eius non. Quod deleniti, odit vitae ex delectus fugiat ea culpa beatae vero, autem quaerat adipisci, explicabo magnam itaque harum rem aperiam quia libero esse repellendus dolorum quam! Magnam quos eaque voluptatum, veniam culpa repudiandae placeat dolor recusandae harum optio laboriosam non fuga quaerat ab nihil? Ut facere cum qui temporibus, asperiores ea at molestiae ab, laudantium, adipisci aut tempore voluptatibus voluptatum porro eaque tenetur necessitatibus doloribus? Mollitia recusandae fugiat libero placeat nesciunt ea consequuntur animi eaque fugit quasi molestias, omnis, alias fuga natus modi inventore perferendis suscipit adipisci soluta, consectetur similique. Eius mollitia ab delectus vero non labore fugit, dolore officiis repellendus expedita deserunt maxime blanditiis voluptate omnis itaque sapiente temporibus, pariatur harum nobis corrupti aspernatur rem? Accusantium eaque, voluptas nihil in, necessitatibus dolorum accusamus libero eligendi eius temporibus nobis modi assumenda harum ratione itaque nesciunt eos vel iure fugit! Ut, eos aliquid.</div>
+</body>
+</html>

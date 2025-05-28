@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+</head>
+<body>
+    <form name="myform" onsubmit="return validform()" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="ne" />
+
+        <input type="submit">
+    </form>
+
+    <script>
+        // Get the form element
+        function validform(){
+            var data = document.forms['myform']['name'].value;
+            console.log(data)
+            var upper = data.match(/[A-Z]/g)            
+            var digit = data.match(/[0-9]/g)
+            var sp = data.match(/[!-/:-@[-`{-~]/g)
+            console.log(upper,digit,sp)
+
+            if(data==''){
+                console.log("Please Enter Your User Name !")
+                return false;
+            }
+            else if(data.length<2 && data.length>20){
+                console.log("Invalid name !!")
+                return false;
+            }
+            // else if(data.length>=20){
+            //     console.log("Length is too much !!")
+            //     return false;               
+            // }
+            else if( digit.length>0 || upper.length>0 || sp.length>0){
+                console.log('Upper/sp/digit is not allow')
+                return false;
+
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

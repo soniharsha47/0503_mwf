@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <script src="./jquery.js"></script>
+    <style>
+        .para{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="top">top</button>
+    <button id="show">left</button>
+    <div class="para"></div>
+
+    <script>
+        
+        $(document).ready(()=>{
+
+            $('#top').click(()=>{
+                $('.para').animate({"top":"200px"})
+            })
+            $('#show').dblclick(()=>{
+                $('.para').animate({"left":"200px"},2000)
+            })
+          
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        /* global design */
+        body{
+            background-color: gray;
+        }
+        nav{
+            background-color: pink;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{padding: 1%;}
+        .dotimg{
+            visibility: hidden;
+            position: absolute;
+        }
+
+        /* For tables */
+        @media (max-width:1300px) {
+            body{
+                background-color: plum;
+            }
+        }
+        /* for mobile phone - 333px-767px */
+        @media (max-width:767px) {
+            body{
+                background-color: black;
+            }
+            .dotimg{
+                visibility: visible;
+                position: static;
+            }
+            ul{
+                visibility: hidden;
+                display: block;
+                position: absolute;
+            }
+            nav:hover ul{
+                visibility: visible;
+                color: white;
+                background-color: pink;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="dotimg" src="./media/threedot.png" height="20px" alt="">
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact</li>
+            <li>Career</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        ul{
+           /* display: flex; */
+           flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <button class="ap">Append</button>
+    <button class="pre">Prepend</button>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae excepturi temporibus quia nulla velit. Nulla, accusamus. Laboriosam sed dolor consequatur?</p>
+    <script>
+        $(document).ready(()=>{
+            $('.ap').click(()=>{
+                $('ul').append("<li> Append </li>");
+            });
+
+            $('.pre').click(()=>{
+                $('ul').prepend('<li>Prepend </li>')
+            });
+        })
+    </script>
+
+</body>
+</html>

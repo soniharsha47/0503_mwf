@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide & Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .para{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button>hide</button>
+    <button id="show">Show</button>
+    <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil, earum quibusdam consequatur laudantium officia eaque doloremque molestiae quos tenetur, iste ea adipisci placeat iusto quis aut dicta quas distinctio consequuntur, maxime vitae sed fuga asperiores. Sunt nihil saepe, quia repellendus nostrum eaque sequi consequuntur aliquid corporis repellat, minima illo. Animi pariatur dolor, magnam dicta iste architecto est tempore reiciendis! Reiciendis laboriosam suscipit, corporis magni cum consequatur culpa veniam vitae laborum similique iste, accusamus veritatis sunt voluptates tempore. Repellendus ratione placeat quis quae ea laudantium, amet impedit sit ab expedita dicta fugit vel libero dolorum saepe doloribus neque dolor, labore delectus qui distinctio suscipit ipsa veritatis? Ipsum ex impedit sunt perferendis cupiditate et dicta quaerat perspiciatis similique vel fuga dolorem eius, dolores cum sint. Ut esse rem ducimus itaque, minima similique amet accusamus repellat odio dolor consectetur quo, voluptas exercitationem sed nam accusantium expedita? Repellat minus porro tempore doloremque, ut ea modi aperiam! Veritatis necessitatibus enim officia optio rerum illum sequi accusantium possimus, voluptates vitae minus provident dolores saepe mollitia veniam incidunt quisquam. Excepturi omnis doloremque consequatur voluptatum nulla explicabo voluptas laudantium adipisci quis ratione accusantium soluta iste amet nostrum cumque, reprehenderit atque necessitatibus nisi quam quaerat. Accusamus, eum consectetur.</div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea incidunt quam tempore voluptatem. Dignissimos sint omnis fuga accusamus, repudiandae officia hic neque reiciendis, quod placeat exercitationem facere earum doloremque architecto, nemo nostrum vero. Explicabo, eum architecto totam at, cum natus reiciendis cupiditate sapiente ipsa rerum consequatur eaque quas omnis ullam ad, velit mollitia? Tempora itaque at adipisci iusto ut quaerat? Debitis reprehenderit facere ut illum id exercitationem molestias odio quisquam omnis nesciunt cupiditate aperiam reiciendis quia, sunt mollitia soluta molestiae incidunt. Perferendis fugit, temporibus quo sequi autem quas iste officia. Tenetur dolor quidem provident unde quia repellendus exercitationem eos nihil, ad corrupti inventore quibusdam laborum, sint libero asperiores debitis in sapiente nisi maiores explicabo itaque animi neque hic officia. Fuga, laborum iure! Corporis expedita quos rem adipisci, magni accusamus at dignissimos ad unde perferendis? Sapiente voluptatem harum rem delectus dolorem aut laudantium vero? Magni earum quos nihil ratione possimus provident mollitia, deserunt laudantium at saepe harum sed maxime autem, enim consequatur doloribus itaque? Ea, aperiam. In deleniti, nihil sunt voluptatem cumque deserunt mollitia vel dolorum illum quas est minus vitae! Voluptas earum doloremque ea sit, sequi itaque inventore minus beatae, perspiciatis exercitationem incidunt! Nobis cum itaque minima eaque doloribus ducimus? Tempora culpa molestiae minus itaque alias quos, cupiditate adipisci ullam ab vero! Libero commodi repudiandae iure laborum qui sunt pariatur ea quas. Odit, sapiente! Doloribus aliquam consequuntur saepe ducimus neque reprehenderit iure asperiores necessitatibus unde totam nostrum itaque minima eius, quibusdam debitis aliquid esse quo! Provident quo culpa cumque officiis hic pariatur odio delectus maxime doloremque autem illo minus nobis modi, facilis quos explicabo, esse, dignissimos optio. Vel accusantium magni facilis consectetur provident impedit sunt! Ut iure consequuntur quaerat, et fuga quidem voluptas at enim reprehenderit molestiae excepturi quasi cupiditate labore veniam laboriosam harum perspiciatis? Dolorem mollitia enim ut labore. Mollitia deserunt nam ipsum totam perferendis. Soluta laborum placeat facere laudantium odit tenetur numquam, quia itaque, minus harum magnam molestiae labore eum quas repellendus cumque aut ad iure? Voluptas corrupti alias, eaque voluptatibus nostrum est vel possimus necessitatibus ut ipsa nihil dolore? Aliquam explicabo nobis est assumenda expedita rem saepe, nesciunt cumque, eligendi ex necessitatibus alias perspiciatis excepturi a iste cupiditate. Quae illum enim ipsa ut explicabo aliquam pariatur, consequuntur laborum molestiae nobis, rerum atque sunt dolorum minus. Magni cupiditate dolorem, corporis quibusdam sapiente expedita doloribus blanditiis, ipsa deleniti facilis, quos dolores! At exercitationem quia quae repellendus veritatis facere blanditiis eveniet suscipit aut recusandae aperiam repellat, voluptate minus dolorum ratione, officia harum? Ad quia, totam soluta quod voluptas, tempore a placeat mollitia alias reprehenderit aspernatur saepe veritatis autem nisi fuga porro ea quis magni fugit necessitatibus nam? Unde, quo? Beatae incidunt placeat, provident amet ut unde nobis repellat eius impedit accusamus, reiciendis assumenda labore aspernatur nostrum rerum facere. Officiis excepturi aliquam vel tempora corrupti magnam rerum blanditiis ipsam ipsa ex voluptas qui deleniti nemo dolor ut numquam dolorum ullam nesciunt iste sequi, quis ducimus consequatur. Quas corrupti delectus quidem autem aut quibusdam placeat voluptatum, rem ipsum nesciunt eum ratione.</div>
+
+    <script>
+        $(document).ready(()=>{
+            $('button').click(()=>{
+                $('.para').hide(2000,()=>{
+                    if(confirm('are you sure to hide it ?')){
+                        $('.para').remove();
+                    }
+                    else{
+                        $('.para').show(2000);
+                    }
+                })
+            })
+
+            $('#show').click(()=>{
+                $('.para').show(5000)
+            })
+        })
+    </script>
+
+</body>
+</html>

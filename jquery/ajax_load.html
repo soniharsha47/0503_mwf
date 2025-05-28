@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - load</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h1>Welcome to AJAX Load Example</h1>
+    <button>click to run file</button>
+    <div id="content">press button to view html content here</div>
+    <div id="content1"></div>
+    
+    <script>
+        $(document).ready(()=>{
+            $('button').click(()=>{
+                $('#content1').load("animate.html")
+                $('#content').load("new.txt");
+            })
+        })
+    </script>
+</body>
+</html>
